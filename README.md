@@ -29,3 +29,16 @@ conda activate cspc
 - Standard Python loops introduce significant performance overhead when iterating over hundreds of thousands of independent atoms.
 - Using NumPy's vectorized functions, such as `rng.binomial`, processes arrays simultaneously, providing massive execution speed-ups.
 - Configuring a comprehensive `.gitignore` and automated `pytest` verification ensures seamless reproducibility across different machines.
+
+---
+
+## PW1 - Lab B: Data, Plotting, and Automation
+
+**What the data showed:**
+- The provided dataset contains two columns: experimental time values and the corresponding remaining particle counts. It records a clear exponential decay process over time.
+
+**Comparison with Analytical Law:**
+- Based on the generated side-by-side subplots, the observed data points on the left perfectly match the smooth analytical curve \(N(t) = N_0 e^{-\lambda t}\) plotted on the right. The two figures share the exact same scale and decay progression.
+
+**Pipeline Automation:**
+- The Snakemake pipeline automates the generation of `figure.png` by tracking modifications in `decay_observed.csv` and `plot.py`, ensuring that the visualization is efficiently rebuilt only when its input sources change.
