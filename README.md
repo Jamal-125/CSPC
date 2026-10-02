@@ -42,3 +42,16 @@ conda activate cspc
 
 **Pipeline Automation:**
 - The Snakemake pipeline automates the generation of `figure.png` by tracking modifications in `decay_observed.csv` and `plot.py`, ensuring that the visualization is efficiently rebuilt only when its input sources change.
+
+# Lab A: Motion Analysis from Tracking Data
+
+## Overview
+In this lab, we analyzed 1D free-fall motion data from `freefall.csv` using Python (`numpy`, `scipy`, `matplotlib`).
+
+## Results
+- **Mean Acceleration:** -8.58 m/s²
+- **Standard Deviation of Acceleration:** 28.72 m/s²
+- **Max Difference in Recovered Position:** 0.7846 m
+
+## Generated Plots
+The processed graphs showing position, velocity, and acceleration over time are saved in `motion.png`.
