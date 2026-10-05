@@ -55,3 +55,25 @@ In this lab, we analyzed 1D free-fall motion data from `freefall.csv` using Pyth
 
 ## Generated Plots
 The processed graphs showing position, velocity, and acceleration over time are saved in `motion.png`.
+
+## PW2 - Lab B: Optimization in Chemistry
+
+### Part 2: Optimization Methods Comparison
+- **Convex function f(x):** All three methods (Gradient Descent, Newton's method, SLSQP) converged to $x = 3.0$.
+- **Harder function g(x):** 
+  - Starting at $x_0 = 0.0$, Newton landed on a local maximum ($x \approx 0.17$, $g'' < 0$), while SLSQP converged to $x \approx -1.30$.
+  - Starting at $x_0 = 2.0$, Newton converged to a local minimum ($x \approx 1.13$), while SLSQP found $x \approx -1.30$.
+  - *Conclusion:* On complex non-convex functions, local optimization methods strongly depend on the starting point and algorithm.
+
+### Part 3: Reaction Rate Fitting
+- **Fitted Rate Constant (k):** $0.2618 \text{ s}^{-1}$
+- Plot saved as `kinetics.png`.
+
+### Part 4: Chemical Equilibrium
+- **Equilibrium Extent (x):** $0.6638$ (Newton and SLSQP agree).
+- **Equilibrium Composition:** $H_2 = 0.3362 \text{ mol}$, $I_2 = 0.3362 \text{ mol}$, $HI = 1.3277 \text{ mol}$.
+- Plot saved as `equilibrium.png`.
+
+### Part 5: Titration Equivalence Point
+- **Equivalence Point Volume:** $50.0 \text{ mL}$ (identified by the peak of $d(pH)/dV$).
+- Plot saved as `titration.png`.
